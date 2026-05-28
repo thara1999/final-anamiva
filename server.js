@@ -7,6 +7,9 @@ const { initSocket } = require("./sockets/socket");
 
 const PORT = process.env.PORT || 5000;
 
+app.get("/", (req, res) => {
+  res.send("🚀 MedApp Backend Running Successfully");
+});
 /* =========================
    DATABASE CONNECTION
 ========================= */
